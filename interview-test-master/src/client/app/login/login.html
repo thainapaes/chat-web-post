@@ -1,0 +1,26 @@
+<div class="center-container">
+      <div class="box-login">
+
+      
+      <div class="login-wrapper">
+            <h1>Welcome!</h1>
+            <form name="loginForm" class="form-inline" ng-submit="loginCtrl.processLogin()">
+                  <h3 class="title">Join Chat</h3>
+                  <div class="form-group">
+                        <!--<p>What's your email?</p>
+                        <input type="text" ng-model="loginCtrl.email"  class="form-control" style="inline-size: -webkit-fill-available;" />-->
+                        <p style="margin-top: 2px">What's your nickname?</p>
+                        <input type="text" ng-model="loginCtrl.username"  class="form-control" />
+                        <!--<button type="submit" ng-click="sayHello()" class="btn btn-primary">Go</button>-->
+                        <div>
+                              <button type="submit" ng-click="attemptToLogin(loginCtrl.username)" style="margin-right: 40px;margin-left: 40px;margin-top:10px;inline-size: -webkit-fill-available;" class="btn btn-primary">Go</button>  
+                        </div>
+                  </div>
+            </form>
+            <br />
+            <a href='' ng-click="loginCtrl.processLogin(true)">Continue with default username</a>
+            <p>{{loginCtrl.info}}</p>
+      </div>
+      </div>
+</div>
+      
